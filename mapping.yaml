@@ -1,0 +1,97 @@
+- www.thelancet.com:
+    default: technical
+    
+- www.nejm.org:
+    pdf: technical
+    default: technical
+    medical-articles:
+        correspondence: technical
+        original-article: technical
+        perspective: non-technical
+        editorial: non-technical
+        medical-intelligence: technical
+        clinical-decisions: technical
+        medicine-and-society: non-technical
+        original-and-selected-communications: technical
+        pointsofview: non-technical
+        clinical-implications-of-basic-research: technical
+    multimedia:
+        quick-take-video: non-technical
+        visual-abstracts: non-technical
+        
+- jamanetwork.com: technical
+
+- www.scientificamerican.com:
+    opinion: non-technical
+    PUBLIC HEALTH: non-technical
+    default: non-technical
+    
+- www.cdc.gov
+
+- www.nature.com
+    advertisement-feature-advertiser-retains-sole-responsibility-for-the-content-of-this-article:
+    an-audience-with:
+    article: technical
+    author-correction: technical
+    brief-communication: 
+    career-column: non-technical
+    career-feature: non-technical
+    clinical-research-article: technical
+    comment: non-technical
+    correspondence: technical
+    editorial: non-technical
+    letter:
+    mini-review:
+    nature-briefing:
+    nature-podcast:
+    news:
+    news-&-views:
+    news-and-views:
+    news-explainer:
+    news-feature:
+    news-in-brief:
+    news-q&a:
+    news-round-up:
+    none:
+    outlook:
+    patents:
+    perspective:
+    publisher-correction:
+    research-highlight:
+    resource:
+    review-article:
+    special-article:
+    summary-review:
+    systematic-review:
+    technology-feature:
+    world-view:
+    
+- www.sciencemag.com
+
+- www.pfizer.com
+    news: non-technical
+    products: technical
+    purpose: non-technical
+    science: technical
+    
+- modernatx.com
+- yourlocalepidemiologist.substack.com
+- jnj.com
+- astrazeneca.com
+- bmj.com
+- www.technologyreview.com
+- globalhealth.stanford.edu
+- https://covidadvisories.iisc.ac.in/
+- https://scienceexchange.caltech.edu
+- https://together.caltech.edu/
+- https://www.hopkinsmedicine.or
+- https://www.ucsf.edu
+- https://www.unbiasedscipod.com/
+- https://www.hoodmedicine.org
+- https://research.princeton.edu
+- https://theconversation.com
+- https://dearpandemic.org
+- https://www.kyoto-u.ac.jp
+- https://www.ucsusa.org
+- https://firstdraftnews.org/
+- https://www.who.int
