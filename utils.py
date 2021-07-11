@@ -138,6 +138,8 @@ def get_category(url):
         
         
     except Exception as e:
+        print("Error Fetching Category for URL: "+ url)
+        print(e)
         return e
         #return url_classifier(url)
 
