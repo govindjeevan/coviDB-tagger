@@ -30,7 +30,7 @@
 
 RESET_ALL=False
 G_SERVICE_KEY_PATH="covid-key.json"
-COVIDB_SHEET_KEY = "1FYR8EzZ6xCHIUfYZuw72fRRs5heX2a9gozYkTHR1akA"
+COVIDB_SHEET_KEY = "1JDHxCcE07oL5Mj3aqGRcm8a3rQkBufC5ndpdkSI9my4"
 UPDATE_BATCH_SIZE = 50
 
 
@@ -39,6 +39,15 @@ import numpy as np
 import pandas as pd
 import utils
 import tqdm
+
+def get_coverage():
+    gc = gspread.service_account(filename=G_SERVICE_KEY_PATH)
+    sh = gc.open_by_key(COVIDB_SHEET_KEY)
+    worksheet = sh.sheet1
+    data =  worksheet.get_all_values()
+    data = np.array(data)
+    articles = pd.DataFrame(data=data[1:,:],columns=data[0,:])
+    return int((len(articles[( (articles["Technical (Y/N)"]=="Y")) | (articles["Technical (Y/N)"]=="N")])/len(articles))*100)
 
 gc = gspread.service_account(filename=G_SERVICE_KEY_PATH)
 sh = gc.open_by_key(COVIDB_SHEET_KEY)
@@ -74,7 +83,7 @@ for article_batch in np.array_split(articles, num_batches):
         elif tag == "non-technical":
             tag = "N"
         else:
-            tag = "M"
+            tag = "Manual"
         article_dict = {
             "values": [[tag]] , 
             "range": TECHNICAL_TAG_ADDR+str(idx+2)
@@ -84,3 +93,6 @@ for article_batch in np.array_split(articles, num_batches):
         print(f'Updating Batch {cnt} to Google Sheet..')
         worksheet.batch_update(update_range)
 
+coverage = get_coverage()
+print("Tagging Coverage: "+ coverage)
+utils.update_coverage_readme(coverage)

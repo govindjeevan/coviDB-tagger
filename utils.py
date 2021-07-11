@@ -204,3 +204,14 @@ def find_tag(mappings, source, category):
     except:
         print(f'Error Processing {category} for {source}')
         return ""
+
+def update_coverage_readme(coverage):
+    with open("README.md", "r+") as f:
+        d = f.readlines()
+        f.seek(0)
+        for i in d:
+            if "Articles Tagged" in i:
+                f.write(f'![Articles Tagged](https://img.shields.io/badge/coverage-{coverage}%25-yellowgreen)')
+            else:
+                f.write(i)
+        f.truncate()
