@@ -183,18 +183,22 @@ def get_content_type(url):
         return False
 
 def find_tag(mappings, source, category):
-    if category is None:
+    try:
+        if category is None:
+            return ""
+        src = ""
+        for key in mappings.keys():
+            if source in key:
+                src = key
+        if len(src)==0:
+            return ""
+        if type(mappings[src])==type(''):
+            return mappings[src]
+        categories = category.split(",")
+        if len(categories)==1:
+            return mappings[src][category]
+        else:
+            return mappings[src][categories[0]][categories[1]]
+    except:
+        print(f'Error Processing {category} for {source}')
         return ""
-    src = ""
-    for key in mappings.keys():
-        if source in key:
-            src = key
-    if len(src)==0:
-        return ""
-    if type(mappings[src])==type(''):
-        return mappings[src]
-    categories = category.split(",")
-    if len(categories)==1:
-        return mappings[src][category]
-    else:
-        return mappings[src][categories[0]][categories[1]]

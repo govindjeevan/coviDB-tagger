@@ -25,10 +25,11 @@
 # 
 #  Automation Script to update CoviDB Database (GSheet) with Tech/Non-Tech Tags 
 #  Made for https://covidb.org/ by govindjeevan7@gmail.com
+#  Last Modified: 07 Jul 2021
 
 
 RESET_ALL=False
-G_SERVICE_KEY_PATH="../cowid-319502-34c80e63dbfa.json"
+G_SERVICE_KEY_PATH="covid-key.json"
 COVIDB_SHEET_KEY = "1FYR8EzZ6xCHIUfYZuw72fRRs5heX2a9gozYkTHR1akA"
 UPDATE_BATCH_SIZE = 50
 

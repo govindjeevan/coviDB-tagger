@@ -5,3 +5,4 @@ newspaper3k
 gensim
 python-Levenshtein
 tqdm
+joblib
