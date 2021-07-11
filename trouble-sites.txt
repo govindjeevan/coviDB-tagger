@@ -1,5 +1,0 @@
-jamanetwork - 403 not allowed by admin
-
-lancelet - can do stuff based on url format 
-
-cdc - can't find any tags

@@ -1,0 +1,7 @@
+nltk
+pandas
+beautifulsoup4
+newspaper3k
+gensim
+python-Levenshtein
+tqdm

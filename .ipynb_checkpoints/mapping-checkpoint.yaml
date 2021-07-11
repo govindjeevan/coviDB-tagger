@@ -1,7 +1,7 @@
-- www.thelancet.com:
+www.thelancet.com:
     default: technical
     
-- www.nejm.org:
+www.nejm.org:
     pdf: technical
     default: technical
     medical-articles:
@@ -19,18 +19,16 @@
         quick-take-video: non-technical
         visual-abstracts: non-technical
         
-- jamanetwork.com: technical
+jamanetwork.com: technical
 
-- www.scientificamerican.com:
+www.scientificamerican.com:
     opinion: non-technical
     PUBLIC HEALTH: non-technical
     default: non-technical
     
-- www.cdc.gov
-
-- www.nature.com
-    advertisement-feature-advertiser-retains-sole-responsibility-for-the-content-of-this-article:
-    an-audience-with:
+www.nature.com:
+    default: technical
+    an-audience-with: 
     article: technical
     author-correction: technical
     brief-communication: 
@@ -40,41 +38,39 @@
     comment: non-technical
     correspondence: technical
     editorial: non-technical
-    letter:
-    mini-review:
-    nature-briefing:
-    nature-podcast:
-    news:
-    news-&-views:
-    news-and-views:
-    news-explainer:
-    news-feature:
-    news-in-brief:
-    news-q&a:
-    news-round-up:
-    none:
-    outlook:
-    patents:
-    perspective:
-    publisher-correction:
-    research-highlight:
-    resource:
-    review-article:
-    special-article:
-    summary-review:
-    systematic-review:
+    letter: 
+    mini-review: 
+    nature-briefing: 
+    nature-podcast: 
+    news: non-technical
+    news-&-views: non-technical
+    news-and-views: non-technical
+    news-explainer: non-technical
+    news-feature: non-technical
+    news-in-brief: non-technical
+    news-q&a: non-technical
+    news-round-up: non-technical
+    outlook: 
+    patents: technical
+    perspective: 
+    publisher-correction: 
+    research-highlight: technical
+    resource: 
+    review-article: technical
+    special-article: 
+    summary-review: technical
+    systematic-review: technical
     technology-feature:
-    world-view:
+    world-view: 
     
-- www.sciencemag.com
 
-- www.pfizer.com
+www.pfizer.com:
     news: non-technical
     products: technical
     purpose: non-technical
     science: technical
     
-- modernatx.com
+modernatx.com:
     news-releases: non-technical
     pdf: technical
     events: non-technical
@@ -82,23 +78,109 @@
     blog: non-technical
     trial: technical
     default: non-technical
-- yourlocalepidemiologist.substack.com
-- jnj.com
-- astrazeneca.com
-- bmj.com
-- www.technologyreview.com
-- globalhealth.stanford.edu
-- https://covidadvisories.iisc.ac.in/
-- https://scienceexchange.caltech.edu
-- https://together.caltech.edu/
-- https://www.hopkinsmedicine.or
-- https://www.ucsf.edu
-- https://www.unbiasedscipod.com/
-- https://www.hoodmedicine.org
-- https://research.princeton.edu
-- https://theconversation.com
-- https://dearpandemic.org
-- https://www.kyoto-u.ac.jp
-- https://www.ucsusa.org
-- https://firstdraftnews.org/
-- https://www.who.int
+    financial-information: non-technical
+    sec-filings: 
+    
+yourlocalepidemiologist.substack.com: technical
+
+jnj.com:
+    pdf: technical
+    events: non-technical
+    
+    caring-and-giving: non-technical
+    coronavirus: 
+    covid-19: 
+    covid-19-impact-on-future-of-nursing-profession:
+    covid-19-vaccine-candidate-trials:
+    health-and-wellness: non-technical
+    innovation: 
+    jobs: non-technical
+    latest-news: non-technical
+    mobilizing-our-resources-to-find-solutions-for-novel-coronavirus:
+    news-and-resources: non-technical
+    news-insights: non-technical
+    nursing-news-events: non-technical
+    our-commitment-to-the-communities-most-impacted-by-covid-19: non-technical
+    our-company: non-technical
+    personal-stories: non-technical
+    road-to-a-vaccine: 
+    united-in-defeating-covid-19: 
+    voices-from-the-front-line: non-technical
+
+bmj.com:
+    pdf: technical
+    events: non-technical
+    default: technical
+    
+    analysis: technical
+    careers: non-technical
+    editor's-choice:  
+    editorials: 
+    feature: 
+    letters: 
+    news: non-technical
+    practice: 
+    research: technical
+    views-and-reviews: non-technical
+    
+www.technologyreview.com:
+    default: non-technical
+    image: non-technical
+
+    77-mass-ave: 
+    battling-covid: 
+    biotechnology: non-technical
+    computing: non-technical
+    coronavirus: non-technical
+    cover-story: non-technical
+    covid-19: non-technical
+    covid-surge: non-technical
+    exposure-notifications: non-technical
+    from-the-president: non-technical
+    humans-and-technology: non-technical
+    opinion: non-technical
+    pandemic-technology-project: non-technical
+    seen-on-campus: non-technical
+    silicon-valley: non-technical
+    tech-policy: non-technical
+    the-big-story: non-technical
+    the-big-story:-mrna: non-technical
+    vaccinating-america: non-technical
+    vaccinations: non-technical
+    vaccine-delivery: non-technical
+    vaccine-race: non-technical
+    vaccines: non-technical
+    wef-davos-agenda-week: non-technical
+    
+globalhealth.stanford.edu:
+    pdf: technical
+    covid-19: non-technical
+    lessons-from-our-global-partners: non-technical
+    note-from-the-field: non-technical
+    
+https://covidadvisories.iisc.ac.in/:
+    default: non-technical
+    pdf: technical
+    
+https://scienceexchange.caltech.edu:
+    coronavirus-testing: 
+    default:   
+    disease-modeling: 
+    experts-on-covid-19: 
+    masks: 
+    transmission: 
+    vaccine-development: 
+    variants: 
+    
+https://together.caltech.edu/:
+    cases-testing-and-tracing:
+    documents: technical
+    faq: non-technical
+    news: non-technical
+    resources:
+    updates: non-technical
+    
+https://www.hopkinsmedicine.or:
+    default: non-technical
+    news-releases: non-technical
+    conditions-and-diseases: non-technical
