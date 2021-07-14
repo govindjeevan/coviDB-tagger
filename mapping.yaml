@@ -31,17 +31,17 @@ www.nature.com:
     an-audience-with: 
     article: technical
     author-correction: technical
-    brief-communication: 
+    brief-communication: technical
     career-column: non-technical
     career-feature: non-technical
     clinical-research-article: technical
     comment: non-technical
     correspondence: technical
     editorial: non-technical
-    letter: 
-    mini-review: 
-    nature-briefing: 
-    nature-podcast: 
+    letter: technical
+    mini-review: technical
+    nature-briefing: non-technical
+    nature-podcast: non-technical
     news: non-technical
     news-&-views: non-technical
     news-and-views: non-technical
@@ -50,18 +50,18 @@ www.nature.com:
     news-in-brief: non-technical
     news-q&a: non-technical
     news-round-up: non-technical
-    outlook: 
+    outlook: non-technical
     patents: technical
-    perspective: 
-    publisher-correction: 
+    perspective: non-technical
+    publisher-correction: technical
     research-highlight: technical
-    resource: 
+    resource: technical
     review-article: technical
-    special-article: 
+    special-article: technical
     summary-review: technical
     systematic-review: technical
-    technology-feature:
-    world-view: 
+    technology-feature: technical
+    world-view: non-technical
     
 
 www.pfizer.com:
@@ -90,8 +90,8 @@ jnj.com:
     caring-and-giving: non-technical
     coronavirus: 
     covid-19: 
-    covid-19-impact-on-future-of-nursing-profession:
-    covid-19-vaccine-candidate-trials:
+    covid-19-impact-on-future-of-nursing-profession: non-technical
+    covid-19-vaccine-candidate-trials: technical
     health-and-wellness: non-technical
     innovation: 
     jobs: non-technical
@@ -103,8 +103,8 @@ jnj.com:
     our-commitment-to-the-communities-most-impacted-by-covid-19: non-technical
     our-company: non-technical
     personal-stories: non-technical
-    road-to-a-vaccine: 
-    united-in-defeating-covid-19: 
+    road-to-a-vaccine: non-technical
+    united-in-defeating-covid-19: non-technical
     voices-from-the-front-line: non-technical
 
 bmj.com:
@@ -114,12 +114,12 @@ bmj.com:
     
     analysis: technical
     careers: non-technical
-    editor's-choice:  
-    editorials: 
-    feature: 
-    letters: 
+    editor's-choice: technical
+    editorials: technical
+    feature: technical
+    letters: technical
     news: non-technical
-    practice: 
+    practice: technical
     research: technical
     views-and-reviews: non-technical
     
@@ -128,7 +128,7 @@ www.technologyreview.com:
     image: non-technical
 
     77-mass-ave: 
-    battling-covid: 
+    battling-covid: non-technical
     biotechnology: non-technical
     computing: non-technical
     coronavirus: non-technical
@@ -165,19 +165,19 @@ https://covidadvisories.iisc.ac.in/:
 https://scienceexchange.caltech.edu:
     coronavirus-testing: 
     default:   
-    disease-modeling: 
-    experts-on-covid-19: 
-    masks: 
-    transmission: 
-    vaccine-development: 
-    variants: 
+    disease-modeling: technical
+    experts-on-covid-19: non-technical
+    masks: non-technical
+    transmission: non-technical
+    vaccine-development: non-technical
+    variants: non-technical
     
 https://together.caltech.edu/:
     cases-testing-and-tracing:
     documents: technical
     faq: non-technical
     news: non-technical
-    resources:
+    resources: non-technical
     updates: non-technical
     
 https://www.hopkinsmedicine.or:
