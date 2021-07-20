@@ -49,6 +49,9 @@ def get_coverage():
     articles = pd.DataFrame(data=data[1:,:],columns=data[0,:])
     return int((len(articles[( (articles["Technical (Y/N)"]=="Y")) | (articles["Technical (Y/N)"]=="N")])/len(articles))*100)
 
+coverage = get_coverage()
+print("Tagging Coverage: "+ str(coverage))
+
 gc = gspread.service_account(filename=G_SERVICE_KEY_PATH)
 sh = gc.open_by_key(COVIDB_SHEET_KEY)
 worksheet = sh.sheet1
@@ -62,7 +65,7 @@ TECHNICAL_TAG_COL = tech_tag.col
 TECHNICAL_TAG_ADDR = tech_tag.address[0]
 
 if RESET_ALL is False:
-    articles = articles[articles["Technical (Y/N)"]==""]
+    articles = articles[(articles["Technical (Y/N)"]=="") | (articles["Technical (Y/N)"]=="Manual")][::-1]
 
 print(f'Total Articles to Tag: {len(articles)}')
 
@@ -91,8 +94,11 @@ for article_batch in np.array_split(articles, num_batches):
         update_range.append(article_dict)
     if (len(update_range)>0):
         print(f'Updating Batch {cnt} to Google Sheet..')
-        worksheet.batch_update(update_range)
+        try:
+            worksheet.batch_update(update_range)
+        except:
+            print("Count not update")
 
 coverage = get_coverage()
-print("Tagging Coverage: "+ coverage)
+print("Tagging Coverage: "+ str(coverage))
 utils.update_coverage_readme(coverage)

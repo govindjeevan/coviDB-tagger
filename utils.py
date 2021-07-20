@@ -198,7 +198,12 @@ def find_tag(mappings, source, category):
             return mappings[src]
         categories = category.split(",")
         if len(categories)==1:
-            return mappings[src][category]
+            if category in mappings[src]:
+                return mappings[src][category]
+            elif "default" in mappings[src]:
+                mappings[src]["default"]
+            else:
+                return ""
         else:
             return mappings[src][categories[0]][categories[1]]
     except:
